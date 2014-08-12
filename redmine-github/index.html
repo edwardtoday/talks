@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>善用工具，提高效率</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../css/talks.css" type="text/css" media="screen"/>
+    <style type="text/css">
+      body { font-family: 'Noto Sans S Chinese'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# 善用工具，提高效率
+
+## Redmine与GitLab简介
+
+卿培
+
+2014年8月13日
+
+---
+
+# 主要内容
+
+1. 为什么使用工具？
+2. 用Redmine管理项目
+3. 用GitLab管理代码
+
+---
+
+# 为什么使用工具？
+
+在项目进行中，我们难免遇到如下问题：
+
+* `start:` “你的代码又改动过了么？把最新的代码发给我一份吧~”
+
+  收到 project-2014xxxx.zip 一枚, `goto start` @_@
+--
+
+* “这个bug我上个月修过了，我把代码给你。”
+
+  “(⊙o⊙)这个文件我也改了好多了…，好吧，我找找哪些需要 ctrl+x & ctrl+v”
+--
+
+* “那啥，大家写个周（月、季、……）报吧~”
+
+  “哎呦，我这几天一共做了哪些事情咋想不起来了呢⊙﹏⊙‖∣”
+
+---
+
+# 工具的作用
+
+* 自然语言沟通：.red[**项目管理**]
+    - 要实现哪些功能？优先级？
+    - 某个功能需要什么时间之前完成？
+    - 模块由谁负责？
+    - 需求变更在哪里讨论、记录？
+
+--
+
+* 程序语言沟通：.red[**代码管理**]
+    - 随时获取最新代码
+    - 共同修改同一个文件的不同部分
+    - 回溯到之前的某个版本
+    - 维护的时候发现有一段看不明白，想知道当初是谁写的，直接去请教
+
+---
+
+# 用Redmine管理项目
+
+入口：http://202.11.4.66
+
+基本操作：
+  - .green[新建项目]：管理员来做（此前为了方便，直接给大家管理员权限了。这个喊一声给建了就行，不是频繁的操作。）
+--
+
+  - 任务、问题的.green[工作流]：新建 → 进行中（已拒绝） → 已解决 → 反馈 → 已关闭
+--
+
+  - .green[任务用时统计]：观察估算时间和实际用时的出入，积累经验在以后的项目工作量估算时逐渐降低误差
+--
+
+  - 项目.green[文档维护]（这部分估计主要用ownCloud来做了）
+--
+
+  - .green[Wiki]：主要是给其他成员看的内部文档，比如如何搭建开发环境、用到什么第三方库、分别是什么版本，有什么坑要注意别掉进去之类
+
+---
+name: demo
+class: center, middle
+# Demo
+
+---
+
+# 用GitLab管理代码
+
+* 什么是Git？
+  - Linus为了管理Linux内核代码而写的版本控制工具，现由开源社区维护。
+--
+
+* 在茫茫的版本控制工具海洋中，为什么选了Git？
+  - 因为它好用啊，这些项目都在用：Android, Eclipse, Fedora, Gnome, KDE, The Linux Kernel, Qt, ...
+  - 详见 [Why Git is Better than X](http://thkoch2001.github.io/whygitisbetter/)
+--
+
+* Git可以：
+  - 备份代码，保留修改历史
+  - 帮助合并对同一文件同时进行的多个修改
+  - 方便地回溯到某个历史版本
+  - 方便地在修复旧版bug与实现新增功能之间切换
+
+---
+
+# GitLab又是什么？
+
+* 目前最活跃的开发者聚集地：[GitHub](https://github.com/) 只对开源项目免费，个人闭源项目收费$，企业版收费$$$。
+* 穷苦的程序员们就做了若干开源克隆版，可以在自己的私服上搭建一个类似GitHub的网站，GitLab就是其中（比较有名的）一个。
+* GitLab在服务器上提供Git仓库，可以通过web进行查看和简单编辑，也可以用git客户端提交代码。
+* GitLab提供了git本身没有的权限控制。
+
+---
+
+# GitLab正确的打开方式
+
+入口：http://202.11.11.201/
+
+> 注册账号请使用内网邮箱 `xxx@sansi.com` 以成功收到验证邮件~
+
+使用简介可以参考我写的 [A Brief Git Tutorial](http://sansibook.qingpei.me/git/use_git.html)（注：末尾有我挑选的若干教程的中文翻译链接）
+
+Git图形客户端的选择如果暂无头绪，可以从 [SourceTree](http://www.sourcetreeapp.com/) 开始尝试。熟悉Git之后，有意将个人的代码都管理起来，不妨使用优雅的 [GitHub for Windows](https://windows.github.com/)。
+
+--
+
+.green[光说不练假把式，我们还是看demo~]
+
+---
+template: demo
+
+---
+class: center, middle, inverse
+
+# 谢谢
+
+如有疑问，请联系 `qingpei@sansi.com` 或拨打小号 `6031`
+
+    </textarea>
+    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

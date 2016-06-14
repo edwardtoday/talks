@@ -339,9 +339,9 @@ blockquote p {
 #newspaper-a
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-	font-size: 12px;
-	margin: 45px;
-	width: 480px;
+	font-size: 90%;
+	margin: 30px;
+	width: 90%;
 	text-align: left;
 	border-collapse: collapse;
 	border: 1px solid #69c;
@@ -350,7 +350,7 @@ blockquote p {
 {
 	padding: 12px 17px 12px 17px;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 125%;
 	color: #039;
 	border-bottom: 1px dashed #69c;
 }

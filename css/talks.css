@@ -58,6 +58,13 @@ blockquote:after {
 blockquote p {
   display: inline;
 }
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
 .pull-left {
   float: left;
   width: 47%;

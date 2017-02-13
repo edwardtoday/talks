@@ -453,3 +453,9 @@ blockquote p {
     left: 0 !important;
   }
 }
+
+.hor-middle {
+	display:block;
+	margin:auto;
+	text-align: center;
+}

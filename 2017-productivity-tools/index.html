@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Productivity Tools</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/talks.css" type="text/css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# Productivity Tools
+
+Permalink: [https://goo.gl/pcSeQ4](https://goo.gl/pcSeQ4)
+
+Qing Pei
+
+February 17, 2017
+
+---
+
+# Contents
+
+1. File management
+2. Email tricks
+3. Remote access
+4. Websites
+5. Mobile apps
+
+---
+class: center, middle
+
+# File management
+
+---
+
+# Get your files on any device
+
+## Distributed
+
+- [Resilio Sync](https://www.resilio.com/individuals/): File synchronization among multiple devices.
+  - Backup your photos via Wi-Fi
+
+## Cloud-based
+
+- [Dropbox](https://www.dropbox.com/): Sync your files to the cloud.
+- [坚果云](https://www.jianguoyun.com/): Dropbox alternative when it's blocked.
+
+---
+
+## [Everything](https://www.voidtools.com/)
+
+Locate files and folders instantly
+
+.hor-middle[![:scale 45%](img/Everything.Search.Window.png)]
+
+---
+
+## [FastCopy](https://ipmsg.org/tools/fastcopy.html.en)
+
+The Fastest Copy/Delete Software on Windows.
+
+.hor-middle[![:scale 30%](img/FastCopy.png)]
+
+---
+
+## [HashMyFiles](http://www.nirsoft.net/utils/hash_my_files.html)
+
+Calculate MD5/SHA1/CRC32 hashes of your files
+
+.hor-middle[![:scale 68%](img/HashMyFiles.png)]
+
+---
+
+## [WinDirStat](https://windirstat.net/)
+
+WinDirStat is a disk usage statistics viewer and cleanup tool for various versions of Microsoft Windows.
+
+.hor-middle[![:scale 63%](img/windirstat.png)]
+
+---
+name: demo
+class: center, middle
+
+# Demo
+
+---
+
+class: center, middle
+
+# Smoother Email Experience
+
+---
+
+## Email filters
+
+- Get system notifications organized
+  - Move updates from Redmine/Gitlab to folders upon receiving
+  - Mark failed builds
+
+.hor-middle[![:scale 40%](img/email-filter-redmine.png)]
+
+---
+
+## Email filters
+
+- Prevent sending internal emails (to `someone@sansi.com`) using external servers (`mail.sansitech.com`)
+
+.hor-middle[
+  ![:scale 40%](img/email-filter-send-notify.png)
+  ![:scale 40%](img/email-filter-send-stop.png)
+]
+---
+
+## Tags
+
+- Starring an email to mark it important.
+- Tag an email for future recap.
+
+.hor-middle[![:scale 30%](img/email-tags.png)]
+
+---
+
+template: demo
+
+---
+class: center, middle
+
+# Remote access to computers
+
+---
+
+## GUI
+
+- [TeamViewer](https://www.teamviewer.com)
+  - Many clients use it.
+  - No port mapping required.
+- [Remote Desktop Connection](https://support.microsoft.com/en-sg/help/17463/windows-7-connect-to-another-computer-remote-desktop-connection)
+  - Better quality with good networking environment.
+  - Uses port 3389 by default.
+
+---
+
+## SSH
+
+- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+  - PuTTY is a free SSH, Telnet and Rlogin client for 32-bit Windows systems.
+- [Mosh](https://mosh.org/): mobile shell
+  - Remote terminal application that allows **roaming**, supports **intermittent connectivity**, and provides intelligent **local echo** and line editing of user keystrokes.
+- [WinSCP](https://winscp.net/eng/download.php): Free SFTP, SCP and FTP client for Windows
+  - Access files on a remote host over an SSH connection.
+
+---
+class: center, middle
+
+# Misc utilities
+
+---
+
+## Global Internet access
+
+- Shadowsocks
+  - We are currently using [fyzhuji](https://www.fyzhuji.com/aff.php?aff=821)
+  - [windows使用json配置文件使用SS教程](https://help.fyzhuji.com/index.php/archives/83/)
+- [EurekaVPT](https://eurekavpt.com/)
+  - Starting at 300 CNY / Annually
+
+---
+
+## [PortableApps](http://portableapps.com/)
+
+The PortableApps.com Platform™ is a full-featured portable software system that lets you build your own custom portable app suite for use on your USB drive, cloud drive, or local PC.
+
+.hor-middle[![:scale 29%](img/portableapps.png)]
+
+---
+
+## [Sysinternals Suite](https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx)
+
+The Sysinternals Troubleshooting Utilities have been rolled up into a single Suite of tools.
+
+- [Autologon](https://technet.microsoft.com/en-us/sysinternals/autologon)
+- [Autoruns](https://technet.microsoft.com/en-us/sysinternals/bb963902)
+- [Junction](https://technet.microsoft.com/en-us/sysinternals/bb896768)
+- [Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer)
+- [Process Monitor](https://technet.microsoft.com/en-us/sysinternals/processmonitor)
+- [TCPView](https://technet.microsoft.com/en-us/sysinternals/tcpview)
+- and much more
+
+---
+
+## [Dependency Walker](http://www.dependencywalker.com/)
+
+Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules.
+
+.hor-middle[![:scale 55%](img/dependency-walker.png)]
+
+---
+
+## [ImageOptim](https://imageoptim.com/mac)
+
+Removes bloated metadata. Saves disk space & bandwidth by compressing images without losing quality. 
+
+.hor-middle[![:scale 45%](img/ImageOptim-app.png)]
+
+Windows alternative: [RIOT](http://luci.criosweb.ro/riot/), [PNGGauntlet](https://pnggauntlet.com/)
+
+---
+
+## [cloc](https://github.com/AlDanial/cloc)
+
+cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+
+```
+prompt> cloc gcc-5.2.0/gcc/c
+      16 text files.
+      15 unique files.
+       3 files ignored.
+
+https://github.com/AlDanial/cloc v 1.65  T=0.23 s (57.1 files/s, 188914.0 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C                               10           4680           6621          30812
+C/C++ Header                     3             99            286            496
+-------------------------------------------------------------------------------
+SUM:                            13           4779           6907          31308
+-------------------------------------------------------------------------------
+```
+
+---
+
+## [Mongoose](https://www.cesanta.com/products/binary)
+
+Web Server Application - No installation, no configurations, one click to run. 
+
+.hor-middle[![:scale 50%](img/mongoose.png)]
+
+---
+
+## [Rufus](https://rufus.akeo.ie/)
+
+Create bootable USB drives the easy way
+
+.hor-middle[![:scale 28%](img/rufus_en.png)]
+
+---
+class: center, middle
+
+# Useful sites
+
+---
+
+## [MSDN, 我告诉你](http://msdn.itellyou.cn/)
+
+.hor-middle[![:scale 75%](img/msdn-itellyou.png)]
+
+---
+
+## [ProcessOn](https://www.processon.com/diagrams)
+
+Create free diagrams online.
+
+.hor-middle[![:scale 75%](img/processon.png)]
+
+---
+
+## [StackOverflow](http://stackoverflow.com/)
+
+Stack Overflow is the largest online community for programmers to learn, share their knowledge, and advance their careers.
+
+.hor-middle[![:scale 75%](img/stackoverflow.png)]
+
+---
+
+## [Smallpdf](https://smallpdf.com/)
+
+Online PDF conversion, compression, editing, etc.
+
+.hor-middle[![:scale 75%](img/smallpdf.png)]
+
+---
+
+## [Unsplash](https://unsplash.com/)
+
+Free ([do whatever you want](https://unsplash.com/license)) high-resolution photos.
+
+.hor-middle[![:scale 70%](img/unsplash.png)]
+
+For wallpapers, use [unsplash-wallpaper](https://github.com/cuth/unsplash-wallpaper) for Windows and [Irvue](http://irvue.tumblr.com/) for macOS.
+
+---
+
+class: center, middle
+
+# Mobile apps
+
+---
+
+## [1Password](https://1password.com/)
+
+1Password remembers all your passwords for you, and keeps them safe and secure behind the one password that only you know.
+
+.hor-middle[![:scale 24%](img/1password.jpeg)]
+
+---
+
+## [Soulver](http://www.acqualia.com/soulver/iphone/)
+
+Soulver is the ultimate app for doing quick calculations and figuring stuff out on your iPhone or iPad.
+
+.hor-middle[
+  ![:scale 23%](img/soulver-ios.png)
+  ![:scale 23%](img/soulver-ios-var.png)
+  ![:scale 23%](img/soulver-ios-currency.png)
+]
+
+---
+
+class: center, middle, inverse
+
+# Thank you
+
+<edwardtoday@gmail.com>
+
+    </textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };
+      var slideshow = remark.create({
+        // Set the slideshow display ratio
+        // Default: '4:3'
+        // Alternatives: '16:9', ...
+        ratio: '16:9',
+
+        // Navigation options
+        navigation: {
+          // Enable or disable navigating using scroll
+          // Default: true
+          // Alternatives: false
+          scroll: true,
+
+          // Enable or disable navigation using touch
+          // Default: true
+          // Alternatives: false
+          touch: true,
+
+          // Enable or disable navigation using click
+          // Default: false
+          // Alternatives: true
+          click: false},
+
+          // Customize slide number label, either using a format string..
+          slideNumberFormat: '%current% / %total%',
+
+          // Enable or disable counting of incremental slides in the slide counting
+          countIncrementalSlides: true
+      });
+    </script>
+  </body>
+</html>

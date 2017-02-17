@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>掌握真实利率</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/talks.css" type="text/css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# 掌握真实利率
+
+Permalink: [https://goo.gl/6FV2gE](https://goo.gl/6FV2gE)
+
+卿培
+
+2017年2月17日
+
+---
+class: center, middle
+
+# 关于利率的问题
+
+---
+
+以下情形的借款利率究竟是多少？
+
+## 信用卡分期
+
+> 您尾号XXXX信用卡本期账单人民币4313.88，还款到期03月04日。马上分期享79折，月费率0.63%！最高可将4098.19元分6期，成功后本期仅需还人民币215.69元。
+
+--
+
+## 蚂蚁借呗
+
+> 蚂蚁借呗的日利率区建委万分之1.5至万分之6之间，按日计息。
+
+---
+
+## 利率
+
+- 货币有时间价值：昨天的毛爷爷>今天的毛爷爷>>10年后的毛爷爷
+- [利率](https://zh.wikipedia.org/wiki/%E5%88%A9%E7%8E%87)体现了该价值
+- [现值的概念](https://zh.wikipedia.org/wiki/%E7%8F%BE%E5%80%BC)
+
+---
+
+## 实际场景中计算利率
+
+房贷没发现有猫腻。
+
+--
+
+其他的根据还款计划倒推：
+
+[XIRR function](https://support.office.com/en-us/article/XIRR-function-de1242ec-6477-445b-b11b-a303ad9adc9d)
+
+```
+XIRR(values, dates, [guess])
+```
+
+- 值    必需。 与 dates 中的支付时间相对应的一系列现金流。 首期支付是可选的，并与投资开始时的成本或支付有关。 如果第一个值是成本或支付，则它必须是负值。 所有后续支付都基于 365 天/年贴现。 值系列中必须至少包含一个正值和一个负值。
+- 日期    必需。 与现金流支付相对应的支付日期表。 日期可按任何顺序排列。 应使用 DATE 函数输入日期，或者将日期作为其他公式或函数的结果输入。 例如，使用函数 DATE(2008,5,23) 输入 2008 年 5 月 23 日。 如果日期以文本形式输入，则会出现问题 。
+- Guess    可选。 对函数 XIRR 计算结果的估计值。
+
+---
+class: center, middle
+
+# 实战
+
+---
+
+## [随手记](https://www.feidee.com/money/)
+
+.hor-middle[![:scale 70%](img/ssj_iphone_img03.png)]
+
+---
+
+class: center, middle, inverse
+
+# 谢谢
+
+请通过以下链接提供您宝贵的反馈：
+
+<https://edwardtoday.typeform.com/to/KE3q9X>
+
+<edwardtoday@gmail.com>
+
+    </textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };
+      var slideshow = remark.create({
+        // Set the slideshow display ratio
+        // Default: '4:3'
+        // Alternatives: '16:9', ...
+        ratio: '16:9',
+
+        // Navigation options
+        navigation: {
+          // Enable or disable navigating using scroll
+          // Default: true
+          // Alternatives: false
+          scroll: true,
+
+          // Enable or disable navigation using touch
+          // Default: true
+          // Alternatives: false
+          touch: true,
+
+          // Enable or disable navigation using click
+          // Default: false
+          // Alternatives: true
+          click: false},
+
+          // Customize slide number label, either using a format string..
+          slideNumberFormat: '%current% / %total%',
+
+          // Enable or disable counting of incremental slides in the slide counting
+          countIncrementalSlides: true
+      });
+    </script>
+  </body>
+</html>
